@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+<canvas style="z-index:-1; position:absolute; top:0; left:0" id="canvas" width="1200" height="500"></canvas><br>
+
+Enter number of vertices:<br>
+<input type="text" onkeydown="vertexCodeKey(event)" id="vertexCount">
+<input type="button" onclick="expandGraph()" value="Add Vertices"><br><br>
+<input type="button" onclick="clearGraph()" value="Clear Graph"><br><br>
+<input type="checkbox" onclick="toggleContinuousSelection()" value="Continuous Selection"> Continuous vertex selection<br><br>
+
+Select distance graphs to display:<br>
+<input type="checkbox" onclick="showDistance(1)" checked> Distance 1<br>
+<input type="checkbox" onclick="showDistance(2)"> <font color="#009900">Distance 2</font><br>
+<input type="checkbox" onclick="showDistance(3)"> <font color="#0066FF">Distance 3</font><br>
+<input type="checkbox" onclick="showDistance(4)"> <font color="#FFFF00">Distance 4</font><br>
+<input type="checkbox" onclick="showDistance(5)"> <font color="#990099">Distance 5</font><br>
+<input type="checkbox" onclick="showDistance(6)"> <font color="#000066">Distance 6</font><br>
+<input type="checkbox" onclick="showDistance(7)"> <font color="#993300">Distance 7</font><br>
+<input type="checkbox" onclick="showDistance(8)"> <font color="#666633">Distance 8</font><br>
+
+
+
+
+
+
+<script type="text/javascript" src="Variables.js"></script>
+<script type="text/javascript" src="Matrix.js"></script>
+<script type="text/javascript" src="GUI.js"></script>
+<script type="text/javascript" src="GraphBuilding.js"></script>
+<script type="text/javascript" src="DisplayUpdates.js"></script>
+<script type="text/javascript" src="GraphProperties.js"></script>
+<!script type="text/javascript" src="Main.js"><!/script>
+
+<script>
+document.addEventListener("click", connectVertices, false);
+document.getElementById("vertexCount").focus();
+</script>
+
+
+</body>
+
+
+</html>	
